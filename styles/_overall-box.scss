@@ -14,7 +14,7 @@
   &.negative {
     background-color: $color-yellow-negative;
   }
-  @media all and (min-width: 768px) {
+  @media all and (max-width: 768px) {
     width: $tablet-thumb-box-size;
     height: $tablet-thumb-box-size;
     img {

@@ -63,7 +63,8 @@
       }
     }
   }
-  @media all and (min-width: 768px) {
+
+  @media all and (max-width: 768px) {
     height: 142px;
     background-position: -5%;
   }

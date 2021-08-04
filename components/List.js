@@ -24,7 +24,7 @@ const List = () => {
         <h1>Previous Rulings</h1>
       </div>
       {people.length ? (
-        <div className="list">
+        <div className="list box">
           {people.map((person, index) => {
             return <PersonCard data={person} personId={index} />;
           })}

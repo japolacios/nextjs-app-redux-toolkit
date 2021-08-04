@@ -1,0 +1,47 @@
+.layout-select {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+  background-color: $color-white;
+  border: 1px solid black;
+  width: 130px;
+  padding: 0.5em;
+  cursor: pointer;
+  .actual-layout {
+    padding-left: 30%;
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg) translateY(-40%);
+    transition: all 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  }
+  .options {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+
+    button {
+      background-color: $color-white;
+      border: 1px solid black;
+      padding: 0.5em;
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    //TODO: Dropshadow
+    .arrow {
+      transform: rotate(-135deg);
+    }
+    .options {
+      display: flex;
+    }
+  }
+}

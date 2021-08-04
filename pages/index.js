@@ -8,7 +8,7 @@ export default function Home() {
         <title>Rule of Thumb</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <link
           href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
           rel="stylesheet"

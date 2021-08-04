@@ -1,0 +1,25 @@
+.overall-votes {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+  &.positive {
+    background-color: $color-green-positive;
+  }
+  &.negative {
+    background-color: $color-yellow-negative;
+  }
+  @media all and (min-width: 768px) {
+    width: $tablet-thumb-box-size;
+    height: $tablet-thumb-box-size;
+    img {
+      width: $tablet-thumb-image-size;
+      height: $tablet-thumb-image-size;
+    }
+  }
+}

@@ -17,14 +17,11 @@ const Vote = ({ category, lastUpdated, personId }) => {
 
   const handleVote = () => {
     if (selected && !hasVoted) {
-      console.log(selected);
-      console.log("Do the vote");
       selected === "up"
         ? dispatch(positive(personId))
         : dispatch(negative(personId));
       setHasVoted(true);
       setSelected(null);
-      console.log("has Voted >>", hasVoted);
     } else {
       setHasVoted(false);
     }
@@ -54,7 +51,10 @@ const Vote = ({ category, lastUpdated, personId }) => {
           <></>
         )}
 
-        <button className="vote-button" onClick={handleVote}>
+        <button
+          className={`vote-button ${selected ? "" : "disabled"}`}
+          onClick={handleVote}
+        >
           {hasVoted ? "Vote Again" : "Vote Now"}
         </button>
       </div>

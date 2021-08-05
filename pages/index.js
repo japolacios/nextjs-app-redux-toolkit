@@ -22,6 +22,7 @@ export default function Home() {
         <div className="max-centered">
           <h1 className="nav__logo">Rule of thumb.</h1>
           <button className="nav__hamburger icon-button" alt="Open Menu">
+            <span className="hidden">Open navigation menu</span>
             <svg width="25" height="20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 0h25v4H0V0zm0 8h25v4H0V8zm0 8h25v4H0v-4z"
@@ -189,6 +190,7 @@ export default function Home() {
             <ul>
               <li>
                 <a href="#">
+                  <span className="hidden">Visit us on Facebook</span>
                   <svg
                     width="24"
                     height="24"
@@ -204,6 +206,7 @@ export default function Home() {
               </li>
               <li>
                 <a href="#">
+                  <span className="hidden">Visit us on Twitter</span>
                   <svg
                     width="26"
                     height="23"

@@ -21,7 +21,12 @@ export default function Home() {
       <nav className="nav" role="navigation">
         <div className="max-centered">
           <h1 className="nav__logo">Rule of thumb.</h1>
-          <button className="nav__hamburger icon-button" alt="Open Menu">
+          <button
+            className="nav__hamburger icon-button"
+            alt="Open Menu"
+            aria-label="Hamburger Menu"
+          >
+            <span className="hidden">Open navigation menu</span>
             <svg width="25" height="20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 0h25v4H0V0zm0 8h25v4H0V8zm0 8h25v4H0v-4z"
@@ -82,7 +87,7 @@ export default function Home() {
                 <a href="http://wikipedia.com">
                   <svg
                     className="featured-card__more-info-icon"
-                    preserveAspectRatio="true"
+                    preserveAspectRatio="xMinYMin meet"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 27 18"
                   >
@@ -188,7 +193,8 @@ export default function Home() {
             <span>Follow us</span>
             <ul>
               <li>
-                <a href="#">
+                <a href="#" aria-label="Visit us on Facebook">
+                  <span className="hidden">Visit us on Facebook</span>
                   <svg
                     width="24"
                     height="24"
@@ -203,7 +209,8 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" aria-label="Visit us on Twitter">
+                  <span className="hidden">Visit us on Twitter</span>
                   <svg
                     width="26"
                     height="23"

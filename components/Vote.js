@@ -35,12 +35,14 @@ const Vote = ({ category, lastUpdated, personId }) => {
         {!hasVoted ? (
           <>
             <button
+              aria-label="Select positive vote"
               className={`up ${selected === "up" ? "selected" : ""}`}
               onClick={() => handleSelect("up")}
             >
               <img src="assets/img/thumbs-up.svg" alt="thubmbs up" />
             </button>
             <button
+              aria-label="Select negative vote"
               className={`down ${selected === "down" ? "selected" : ""}`}
               onClick={() => handleSelect("down")}
             >
@@ -52,6 +54,7 @@ const Vote = ({ category, lastUpdated, personId }) => {
         )}
 
         <button
+          aria-label="Submit vote"
           className={`vote-button ${selected ? "" : "disabled"}`}
           onClick={handleVote}
         >

@@ -14,9 +14,9 @@ const OverallVotes = ({ votes }) => {
   return (
     <div className={`overall-votes ${overall ? "positive" : "negative"}`}>
       {overall ? (
-        <img src="assets/img/thumbs-up.svg" />
+        <img src="assets/img/thumbs-up.svg" alt="overall thubmbs up" />
       ) : (
-        <img src="assets/img/thumbs-down.svg" />
+        <img src="assets/img/thumbs-down.svg" alt="overall thubmbs up" />
       )}
     </div>
   );

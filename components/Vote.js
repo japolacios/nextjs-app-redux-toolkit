@@ -38,13 +38,13 @@ const Vote = ({ category, lastUpdated, personId }) => {
               className={`up ${selected === "up" ? "selected" : ""}`}
               onClick={() => handleSelect("up")}
             >
-              <img src="assets/img/thumbs-up.svg" />
+              <img src="assets/img/thumbs-up.svg" alt="thubmbs up" />
             </button>
             <button
               className={`down ${selected === "down" ? "selected" : ""}`}
               onClick={() => handleSelect("down")}
             >
-              <img src="assets/img/thumbs-down.svg" />
+              <img src="assets/img/thumbs-down.svg" alt="thubmbs down" />
             </button>
           </>
         ) : (

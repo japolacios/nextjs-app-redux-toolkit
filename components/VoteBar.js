@@ -26,7 +26,7 @@ const VoteBar = ({ votes }) => {
         className="section-bar positive"
         style={{ width: `${positiveVotes}%` }}
       >
-        <img src="assets/img/thumbs-up.svg" />
+        <img src="assets/img/thumbs-up.svg" alt="thubmbs up" />
         <p>{positiveVotes}%</p>
       </div>
       <div
@@ -34,7 +34,7 @@ const VoteBar = ({ votes }) => {
         style={{ width: `${negativeVotes}%` }}
       >
         <p>{negativeVotes}%</p>
-        <img src="assets/img/thumbs-down.svg" />
+        <img src="assets/img/thumbs-down.svg" alt="thubmbs down" />
       </div>
     </div>
   );

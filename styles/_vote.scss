@@ -47,6 +47,12 @@
         background-color: $color-darker-background;
         border: 1px solid $color-white;
       }
+      &.disabled {
+        cursor: default;
+        &:hover {
+          background-color: $color-dark-background;
+        }
+      }
     }
   }
   @media all and (max-width: 768px) {

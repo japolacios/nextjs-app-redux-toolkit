@@ -4,6 +4,7 @@ import { data } from "@/assets/data";
 import { setInitialPeople } from "@/redux/people";
 import PersonCard from "./PersonCard";
 import useWidth from "@/hooks/useWidth";
+import useSaveLocal from "@/hooks/useSaveLocal";
 import SelectLayout from "./SelectLayout";
 
 const List = () => {
@@ -20,12 +21,11 @@ const List = () => {
     const localPeople = JSON.parse(localStorage.getItem("people"));
     if (!localPeople || !localPeople.length) {
       dispatch(setInitialPeople(data));
-      localStorage.setItem("people", JSON.stringify(people));
     } else {
       dispatch(setInitialPeople(localPeople));
     }
   }, []);
-
+  useSaveLocal();
   return (
     <>
       <div className="list-header">

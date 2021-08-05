@@ -13,11 +13,9 @@ export const peopleSlice = createSlice({
     },
     positive: (state, action) => {
       state.people[action.payload].votes.positive += 1;
-      localStorage.setItem("people", JSON.stringify(state.people));
     },
     negative: (state, action) => {
       state.people[action.payload].votes.negative += 1;
-      localStorage.setItem("people", JSON.stringify(state.people));
     },
   },
 });

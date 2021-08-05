@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+import Image from "next/image";
+import { thumbsUp, thumbsDown } from "@/utils/imageMap";
+
 const VoteBar = ({ votes }) => {
   const [totalVotes, setTotalVotes] = useState(votes.positive + votes.negative);
 
@@ -26,7 +29,7 @@ const VoteBar = ({ votes }) => {
         className="section-bar positive"
         style={{ width: `${positiveVotes}%` }}
       >
-        <img src="assets/img/thumbs-up.svg" alt="thubmbs up" />
+        <Image src={thumbsUp} alt="thubmbs up" />
         <p>{positiveVotes}%</p>
       </div>
       <div
@@ -34,7 +37,7 @@ const VoteBar = ({ votes }) => {
         style={{ width: `${negativeVotes}%` }}
       >
         <p>{negativeVotes}%</p>
-        <img src="assets/img/thumbs-down.svg" alt="thubmbs down" />
+        <Image src={thumbsDown} alt="thubmbs down" />
       </div>
     </div>
   );

@@ -6,6 +6,8 @@
         "@/assets/*": ["public/assets/*"],
         "@/redux/*": ["redux/*"],
         "@/hooks/*": ["hooks/*"],
+        "@/utils/*": ["utils/*"],
+        "@/images/*": ["public/assets/img/*"],
       }
     }
   }

@@ -1,7 +1,10 @@
 import { useState } from "react";
+import Image from "next/image";
 import moment from "moment";
 import { useDispatch } from "react-redux";
 import { positive, negative } from "@/redux/people";
+
+import { thumbsUp, thumbsDown } from "@/utils/imageMap";
 
 const Vote = ({ category, lastUpdated, personId }) => {
   const [selected, setSelected] = useState(null);
@@ -39,14 +42,14 @@ const Vote = ({ category, lastUpdated, personId }) => {
               className={`up ${selected === "up" ? "selected" : ""}`}
               onClick={() => handleSelect("up")}
             >
-              <img src="assets/img/thumbs-up.svg" alt="thubmbs up" />
+              <Image src={thumbsUp} alt="thubmbs up" />
             </button>
             <button
               aria-label="Select negative vote"
               className={`down ${selected === "down" ? "selected" : ""}`}
               onClick={() => handleSelect("down")}
             >
-              <img src="assets/img/thumbs-down.svg" alt="thubmbs down" />
+              <Image src={thumbsDown} alt="thubmbs down" />
             </button>
           </>
         ) : (

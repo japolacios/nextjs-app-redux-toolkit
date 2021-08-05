@@ -2,13 +2,21 @@ import Vote from "./Vote";
 import VoteBar from "./VoteBar";
 import OverallVotes from "./OverallVotes";
 
-const PersonCard = ({ data, personId }) => {
-  const { name, description, category, picture, lastUpdated, votes } = data;
+const PersonCard = ({ data, personId, isGrid }) => {
+  const {
+    name,
+    description,
+    category,
+    picture,
+    pictureBig,
+    lastUpdated,
+    votes,
+  } = data;
 
   return (
     <div
       className="card"
-      style={{ backgroundImage: `url(assets/img/people/${picture})` }}
+      style={{ backgroundImage: `url(${!isGrid ? picture : pictureBig})` }}
     >
       <div className="info-wrapper">
         <div className="info">

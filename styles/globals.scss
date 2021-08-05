@@ -451,7 +451,9 @@ main h2 {
 .max-centered {
   display: contents;
 }
-
+.hidden {
+  display: none;
+}
 @media all and (min-width: 500px) {
   .banner-top .banner__left {
     flex-basis: 30%;

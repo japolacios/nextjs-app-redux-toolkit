@@ -36,7 +36,12 @@ const List = () => {
         <div className={`list ${isMobile || isGrid ? "box" : ""}`}>
           {people.map((person, index) => {
             return (
-              <PersonCard key={`key-${index}`} data={person} personId={index} />
+              <PersonCard
+                key={`key-${index}`}
+                data={person}
+                personId={index}
+                isGrid={isMobile || isGrid}
+              />
             );
           })}
         </div>

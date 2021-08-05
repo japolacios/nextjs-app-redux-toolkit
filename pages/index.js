@@ -9,6 +9,9 @@ export default function Home() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="description" content="Thumbs law, vote for your favorite" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#333" />
         <link
           href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
           rel="stylesheet"
@@ -90,6 +93,7 @@ export default function Home() {
                     />
                   </svg>
                   More information
+                  <span className="hidden">in the wikipedia site</span>
                 </a>
               </p>
               <p className="featured-card__cta">What’s Your Veredict?</p>

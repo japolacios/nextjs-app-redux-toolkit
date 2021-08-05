@@ -1,0 +1,9 @@
+{
+    "name": "The Thumbs Law",
+    "short_name": "Thumbs Law",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#333",
+    "orientation": "portrait-primary"
+  }

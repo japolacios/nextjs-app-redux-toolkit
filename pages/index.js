@@ -1,6 +1,8 @@
 import Head from "next/head";
 import List from "@/components/List";
 
+import Image from "next/image";
+import { searchIcon } from "@/utils/imageMap";
 export default function Home() {
   return (
     <div>
@@ -57,7 +59,7 @@ export default function Home() {
                   alt="Search"
                   type="submit"
                 >
-                  <img src="assets/img/search.svg" alt="search" />
+                  <Image src={searchIcon} alt="search" />
                 </button>
               </form>
             </li>
